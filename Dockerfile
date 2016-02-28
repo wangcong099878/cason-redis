@@ -4,7 +4,7 @@ USER root
 
 ADD ./tools/yum.repos.d/* /etc/yum.repos.d/
 ADD ./tools/rpm-gpg/* /etc/pki/rpm-gpg/
-RUN yum install redis
+RUN yum install -y redis
 
 ### main
 ADD ./start.sh /start.sh
